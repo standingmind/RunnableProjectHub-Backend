@@ -1,0 +1,50 @@
+  div.main{
+    width: 80%;
+    background-color: #d5dbdb;
+    box-shadow: 0px 0px 7px 3px #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto ;
+    padding: 20px;
+  }
+
+  #input_textfield{
+    margin-left: 1%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 1px;
+    height: 20px;
+  }
+
+  
+
+  button.loginButton{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 6px 20px;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #555;
+    
+    background-color: #ddd;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+
+    transition: background-color .2s ease-out;
+    background-clip: padding-box; 
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  }

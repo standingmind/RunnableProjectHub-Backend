@@ -1,0 +1,7 @@
+{
+    "username":"root",
+    "password" :"root",
+    "hostname":"localhost",
+    "database":"runnableprojecthub",
+    "driver" : "mysql"
+}
