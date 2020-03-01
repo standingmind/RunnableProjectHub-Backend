@@ -1,10 +1,15 @@
 package control
 import (
 	"fmt"
+	"log"
 	"os"
 )
 func CreateDockerfileforMysql(dbversion string)error{
-	f,err:=os.Create("/home/htunlin/go/src/control/Dockerfile")
+	dir,err:=os.Getwd()
+	if err!=nil{
+		log.Fatal(err)
+	}
+	f,err:=os.Create(dir+"/control/Dockerfile")
 	if err!=nil{
 		fmt.Println(err)
 		f.Close()

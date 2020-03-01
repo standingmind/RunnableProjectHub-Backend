@@ -6,12 +6,17 @@ import (
     "context"
     "io"
     "io/ioutil"
+    "log"
     "os"
     "github.com/docker/docker/api/types"
     "github.com/docker/docker/client"
 )
 
 func CreateImageforMysql(iname string)error {
+    dir,err:=os.Getwd()
+    if err!=nil{
+        log.Fatal(err)
+    }
     ctx := context.Background()
 	cli,err:=client.NewClientWithOpts(client.FromEnv,client.WithAPIVersionNegotiation())
     if err != nil {
@@ -23,7 +28,7 @@ func CreateImageforMysql(iname string)error {
     defer tw.Close()
 
     dockerFile := "myDockerfile"
-    dockerFileReader, err := os.Open("/home/htunlin/go/src/control/Dockerfile")
+    dockerFileReader, err := os.Open(dir+"/control/Dockerfile")
     if err != nil {
         panic(err)
     }
